@@ -577,7 +577,7 @@
   "PASSWORD-NOT-MATCH":"Passwords do not match.",
   "SUBMIT":"Submit",
   "RESEND":"Resend",
-  "RESEND-LINK":"If you didn't get the mail then click on the resend link below",
+  "RESEND-LINK":"If you didn't get the mail then click on the resend button below",
   "EMAIL-LINE-SENT": "To activate your Assessment account click the link we sent to your emailId",
   "EMAIL-LINE-RESENT": "To activate your Assessment account click the link we resent to your emailId",
   "MY-PROFILE":"My Profile",

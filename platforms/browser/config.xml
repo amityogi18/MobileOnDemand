@@ -15,5 +15,10 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <universal-links>
+        <host name="stage.jottp.com" scheme="https">
+            <path event="deeplink_cb" url="*" />
+        </host>
+    </universal-links>
     <preference name="loadUrlTimeoutValue" value="700000" />
 </widget>

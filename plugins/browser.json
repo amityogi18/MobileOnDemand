@@ -27,6 +27,22 @@
         },
         "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-keyboard": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-customurlscheme": {
+            "URL_SCHEME": "ondemand",
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "com.moust.cordova.videoplayer": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-universal-links-plugin": {
+            "PACKAGE_NAME": "com.test.Ondemand"
         }
     },
     "dependent_plugins": {

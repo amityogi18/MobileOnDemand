@@ -287,6 +287,46 @@ module.exports = [
         "file": "plugins/cordova-plugin-media-capture/www/android/init.js",
         "pluginId": "cordova-plugin-media-capture",
         "runs": true
+    },
+    {
+        "id": "com.bunkerpalace.cordova.YoutubeVideoPlayer.YoutubeVideoPlayer",
+        "file": "plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/www/YoutubeVideoPlayer.js",
+        "pluginId": "com.bunkerpalace.cordova.YoutubeVideoPlayer",
+        "clobbers": [
+            "YoutubeVideoPlayer"
+        ]
+    },
+    {
+        "id": "cordova-plugin-keyboard.keyboard",
+        "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+        "pluginId": "cordova-plugin-keyboard",
+        "clobbers": [
+            "window.Keyboard"
+        ]
+    },
+    {
+        "id": "cordova-plugin-customurlscheme.LaunchMyApp",
+        "file": "plugins/cordova-plugin-customurlscheme/www/android/LaunchMyApp.js",
+        "pluginId": "cordova-plugin-customurlscheme",
+        "clobbers": [
+            "window.plugins.launchmyapp"
+        ]
+    },
+    {
+        "id": "com.moust.cordova.videoplayer.VideoPlayer",
+        "file": "plugins/com.moust.cordova.videoplayer/www/videoplayer.js",
+        "pluginId": "com.moust.cordova.videoplayer",
+        "clobbers": [
+            "VideoPlayer"
+        ]
+    },
+    {
+        "id": "cordova-universal-links-plugin.universalLinks",
+        "file": "plugins/cordova-universal-links-plugin/www/universal_links.js",
+        "pluginId": "cordova-universal-links-plugin",
+        "clobbers": [
+            "universalLinks"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -301,7 +341,12 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.3.3",
     "es6-promise-plugin": "4.1.0",
     "phonegap-plugin-media-stream": "1.2.0",
-    "cordova-plugin-media-capture": "1.4.3"
+    "cordova-plugin-media-capture": "1.4.3",
+    "com.bunkerpalace.cordova.YoutubeVideoPlayer": "1.0.5",
+    "cordova-plugin-keyboard": "1.2.0",
+    "cordova-plugin-customurlscheme": "4.3.0",
+    "com.moust.cordova.videoplayer": "1.0.1",
+    "cordova-universal-links-plugin": "1.2.1"
 };
 // BOTTOM OF METADATA
 });

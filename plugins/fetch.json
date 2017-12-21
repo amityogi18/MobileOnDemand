@@ -78,5 +78,47 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/JonSmart/CordovaYoutubeVideoPlayer"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-keyboard@^1.2.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-customurlscheme": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-customurlscheme"
+        },
+        "is_top_level": true,
+        "variables": {
+            "URL_SCHEME": "ondemand"
+        }
+    },
+    "cordova-universal-links-plugin": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-universal-links-plugin@^1.2.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.moust.cordova.videoplayer": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-video-player"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

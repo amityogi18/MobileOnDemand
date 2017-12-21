@@ -48,7 +48,8 @@
         window.mobile = true;
     </script>
 	<link href="style/app.css" rel="stylesheet">
-	<link href="custom.mobile.css" rel="stylesheet">
+    <link href="custom.mobile.css" rel="stylesheet">
+    <script src="video-js.css"></script>
 </head>
 
 <body onload="onLoad()">
@@ -67,7 +68,9 @@
     <script src="https://vjs.zencdn.net/5.16.0/video.js"></script>
     <script src="cordova.js"></script>
 	<script src="vendor.bundle.js"></script>
-	<script src="custom.mobile.js"></script>
+    <script src="custom.mobile.js"></script>
+    
+    
 	<script type="text/javascript" charset="utf-8">
 
 		// Wait for device API libraries to load
@@ -83,6 +86,9 @@
 		function onDeviceReady() {
 			// Now safe to use device APIs
 			console.log("onDeviceReady");
+            universalLinks.subscribe('deeplink_cb', function(eveData){
+                console.log("Deeplink Call back.");
+            });
         }
         
         function offline(){
@@ -97,6 +103,10 @@
             if (networkState !== Connection.NONE) {
                 alert("Internet Connection is Available !!")
             }
+        }
+
+        function handleOpenURL(url) {
+            console.log("received url: " + url);
         }
     </script>
 </body>

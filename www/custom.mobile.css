@@ -13,16 +13,30 @@
 	margin-top: 56px;
 }
 #open-icon {
-    position: fixed;
-    margin-top: 15px;
-	z-index: 90000;
-	color: rgb(232, 232, 232);
+	position: fixed;
+    margin-top: 17px;
+    z-index: 90000;
+    color: rgb(232, 232, 232);
+    display: block;
+    left: 15px;
+    font-size: 24px;
+}
+
+.sub-menu.admin-menu{
+ 	width: 100%
 }
 .main-header .user-settings .user-logo img {
     height: 80% !important;
     margin-top: -2px;
     width: 80% !important;
-	margin-right: 15px;
+	margin-right: -2px;
+}
+.main-header .user-logo .user-image.admin-mbl-userimg{
+	width: 100% !important;
+	margin-right: 4px;
+	height: 43px !important;
+	margin-top: -4px;
+	
 }
 footer{
 	display:none;
@@ -121,6 +135,12 @@ footer{
 .edit-my-profile-page .layout-row .col-md-6.col-sm-6.col-xs-12 .col-md-7.col-sm-7.col-xs-12{
 	padding: 0;
 }
+
+.content-wrapper.view-profile-page.test-instruction-style{
+	overflow-y: scroll;
+    height: 100%;
+
+}
 .content-wrapper.candidate-view .candidate-view-steps.step {
 	height: auto;
 	padding-bottom: 0;
@@ -136,14 +156,15 @@ footer{
 	/* padding: 83px 0px 35px 0; */
 	padding: 33px 0px 35px 0;
 	height: 100%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 .content-wrapper.candidate-view .candidate-view-steps .step-body > div.container{
     height: 100%;
     background-color: #fff;
 }
 .content-wrapper.candidate-view .candidate-view-steps .step-body .whte-bg .user-all-details {
-    padding: 30px 2px !important;
+	/* padding: 30px 2px !important; */
+	padding: 0px 2px 0px 2px!important;
 }
 .content-wrapper.candidate-view .btn-left1 button {
 	width: 100%;
@@ -338,7 +359,7 @@ footer{
 
 .menu-lis {
     width: 210px;
-    float: right;
+    float: left;
     background: #fff;
     height: 100%;
 }
@@ -358,6 +379,10 @@ footer{
     margin: 14px auto;
     padding: 3px;
 }
+.reset-admincp{
+	width: 100%;
+    margin-left: -8px;
+}
 
 .question-footer .savedata-btn {
     width: 93%;
@@ -375,18 +400,159 @@ footer{
     margin-left: -5px;
 }
 
+.issue-ticketing-setting .row{
+	margin-right: -15px;
+    margin-left: -15px;
+}
+
+.issue-ticketing-setting .issue-table {
+    margin-left: -4px;
+}
+
+.analytic.content-wrapper,
+.content-wrapper.conference-home{
+	padding: 15px 0px 85px !important;
+}
+
+.job-openings-container form .layout-gt-sm-row.flex-offset-25{
+	margin-left: 0;
+}
+
+.job-openings-container form .layout-gt-sm-row.flex-offset-25 .flex-25,
+.job-openings-container form .layout-gt-sm-row.flex-offset-25 .flex-25{
+	max-width: 94%;
+}
+
+.job-openings-container form .layout-gt-sm-row.flex-offset-25 .flex-25 button,
+.job-openings-container form .layout-gt-sm-row.flex-offset-25 .flex-15 button{
+	width: 100%;
+}
+
+md-card.main-education-section .col-xs-12{
+	padding :0;
+}
+
+.content-wrapper.certification-container .list-group li{
+	height: 120px;
+}
+
+.content-wrapper.certification-container .list-group li button:not(.md-fab.md-mini){
+	width: 97%;
+}
+
+.modal-content .add-cover-letter button{
+  width: 0% !important;
+}
+
+.cover-letter-panel button{
+	width: 95%;
+}
+
+#videoResponse{
+	margin: 0px 0px 30px;
+}
+
+#videoResponse .vjs-big-play-button{
+	display: table;
+    margin: 0 auto;
+}
+#videoResponse_html5_api{
+	width: inherit;
+}
+#videoResponse .vjs-control-barvjs-control{
+	display:none;
+}
+
+.multi-apply-container .content-of-modal{
+	 width: 342px;
+     margin-left: 0;
+}
+
+.modal-body.discard-msg{
+	padding: 0px;
+}
+.cancel-upload{
+	text-align: center;
+}
+
+.modal-content.email-model {
+	width: 100% !important;
+    margin-left: 0;
+}
+
+.menu-list{
+    width: 210px;
+    background: #fff;
+    height: 100%;
+}
+
+.admin-menu{
+	width: 0px;
+	background: transparent;
+    
+}
+
+.project-summary-tblwrapper{
+	overflow: auto;
+    padding: 0;
+}
+.video-response-question .video-response-container .preparation-response-time {
+	height: auto;
+}
+
+.admin-menu #navbarCollapse {
+	min-height: 700px;
+	background: rgb(0, 125, 157);
+	margin-left: -10px;
+	width: 210px;
+	/* height: 1px; */
+}
+
+@media only screen and (max-width: 500px)
+{
+.choose-skill {
+    margin-top: 0px !important; 
+	right:0;
+}
+}
+
+@media screen and (max-width: 480px)
+{
+	.MySideBarNav {
+		z-index: 999;
+	}
+}
+.edit-my-profile-page .content-of-modal {
+     width: 341px; 
+     margin-left: 0px; 
+    
+}
+@media only screen and (max-width: 767px)
+{
+	.modal-footer button {
+		margin: 10px 6px !important;
+	}
+}
 
 @media only screen and (max-width: 467px)
 	{
 	.login-page-container .second-section {
-		position: absolute;
+		/* position: absolute;
 		/* left: 2px; */
-		padding-top: 70px;
-		margin-left: 15px;
+		/*padding-top: 70px;
+		margin-left: 15px; */
+		position: fixed;
+		left: 2px;
+		padding-top: 30px;
+		margin-left: 0;
 	}
 	.login-page-container .oda-image-header {
 		margin-top: auto;	
 	}
+}
+
+.mail-box-container .mail-help-box .hide-link {
+  margin-top: -13px;
 }
 
 @media screen and (max-width: 766px){
@@ -403,8 +569,11 @@ footer{
 	.job-openings-container .row {
 		margin-right: -10px;
 		margin-left: -10px;
+	}	
+	.mbl-logo-header{
+		float: left;
+		margin-left: -30px;
 	}
-	
 }
 @media screen and (max-width: 480px){
 .MySideBarNav .closebtn {
@@ -413,6 +582,8 @@ footer{
 	text-align: right;
 	color: #333;
 	right: 0px;
+	position: relative;
+	display: none;
 }}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 568px) and (min-device-width: 320px) and (orientation: portrait)
@@ -421,6 +592,10 @@ footer{
 	 {
      width: 100% !important;
 	}
+}
+
+.mail-box-container .mail-help-box a{
+  word-break: break-all;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 568px) and (min-device-width: 320px) and (orientation: portrait){
@@ -440,9 +615,10 @@ footer{
 
 @media screen and (max-width: 766px){
 	.MySideBarNav {
-		padding-top: 95px;
+		padding-top: 44px;
 		/* width: 100% !important; */
 		background: rgba(51, 51, 51, 0.36);
+		left:0;
 	}
 }
 
@@ -464,6 +640,21 @@ footer{
 	.manage-profile-page.content-wrapper,
 	.content-wrapper.video-intro-container {
 		padding: 15px 10px 85px !important;
+	}
+	.content-wrapper.view-profile-page,
+	.content-wrapper.cover-letter-container,
+	.content-wrapper.multi-apply-container {
+		padding: 15px 10px 85px !important;
+	}
+	.content-wrapper.certification-container{
+		padding: 15px 12px 85px !important;
+	}
+	.content-wrapper.general-setting {
+		padding: 15px 0px 85px !important;
+	}
+	.content-wrapper.dashboard-notification-section {
+		padding: 15px 10px 85px !important;
+		margin-top: 0;
 	}
 }
 
@@ -492,7 +683,7 @@ footer{
 		margin-left: -21px;
 		top: 0;
 		bottom: 0;
-		overflow-y: scroll;
+		/* overflow-y: scroll; */
 	}
 }
 
@@ -508,4 +699,5 @@ footer{
 			margin-top: 0;
 	}
 }
+
 

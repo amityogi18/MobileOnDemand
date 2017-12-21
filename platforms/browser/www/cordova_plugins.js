@@ -297,6 +297,38 @@ module.exports = [
         "id": "cordova-plugin-media-capture.CaptureProxy",
         "pluginId": "cordova-plugin-media-capture",
         "runs": true
+    },
+    {
+        "file": "plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/www/YoutubeVideoPlayer.js",
+        "id": "com.bunkerpalace.cordova.YoutubeVideoPlayer.YoutubeVideoPlayer",
+        "pluginId": "com.bunkerpalace.cordova.YoutubeVideoPlayer",
+        "clobbers": [
+            "YoutubeVideoPlayer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+        "id": "cordova-plugin-keyboard.keyboard",
+        "pluginId": "cordova-plugin-keyboard",
+        "clobbers": [
+            "window.Keyboard"
+        ]
+    },
+    {
+        "file": "plugins/com.moust.cordova.videoplayer/www/videoplayer.js",
+        "id": "com.moust.cordova.videoplayer.VideoPlayer",
+        "pluginId": "com.moust.cordova.videoplayer",
+        "clobbers": [
+            "VideoPlayer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-universal-links-plugin/www/universal_links.js",
+        "id": "cordova-universal-links-plugin.universalLinks",
+        "pluginId": "cordova-universal-links-plugin",
+        "clobbers": [
+            "universalLinks"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -311,7 +343,12 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.3.3",
     "es6-promise-plugin": "4.1.0",
     "phonegap-plugin-media-stream": "1.2.0",
-    "cordova-plugin-media-capture": "1.4.3"
+    "cordova-plugin-media-capture": "1.4.3",
+    "com.bunkerpalace.cordova.YoutubeVideoPlayer": "1.0.5",
+    "cordova-plugin-keyboard": "1.2.0",
+    "cordova-plugin-customurlscheme": "4.3.0",
+    "com.moust.cordova.videoplayer": "1.0.1",
+    "cordova-universal-links-plugin": "1.2.1"
 }
 // BOTTOM OF METADATA
 });

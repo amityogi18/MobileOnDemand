@@ -705,7 +705,7 @@
   "PASSWORD-NOT-MATCH":"Las contraseñas no coinciden.",
   "SUBMIT":"enviar",
   "RESEND":"reenviar",
-  "RESEND-LINK": "Si usted no recibió el reenvío de correo electrónico haciendo clic en el siguiente enlace:",
+  "RESEND-LINK": "Si no recibió el correo, haga clic en el botón de reenvío a continuación",
   "EMAIL-LINE-SENT": "Para activar su cuenta de Evaluación haga clic en el enlace que le enviamos para su EMAILID",
   "EMAIL-LINE-RESENT": "Para activar su cuenta de Evaluación haga clic en el enlace nos molesta a su EMAILID",
   "MY-PROFILE":"Mi perfil",

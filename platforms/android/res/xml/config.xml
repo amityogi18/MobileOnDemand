@@ -25,6 +25,24 @@
     <feature name="Capture">
         <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
     </feature>
+    <feature name="LaunchMyApp">
+        <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
+    </feature>
+    <feature name="VideoPlayer">
+        <param name="android-package" value="com.moust.cordova.videoplayer.VideoPlayer" />
+    </feature>
+    <feature name="UniversalLinks">
+        <param name="android-package" value="com.nordnetab.cordova.ul.UniversalLinksPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <widget>
+        <feature name="YoutubeVideoPlayer">
+            <param name="android-package" value="com.bunkerpalace.cordova.YoutubeVideoPlayer" />
+        </feature>
+    </widget>
+    <feature name="Keyboard">
+        <param name="android-package" onload="true" value="org.apache.cordova.labs.keyboard.Keyboard" />
+    </feature>
     <name>Ondemand</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -40,6 +58,11 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <universal-links>
+        <host name="stage.jottp.com" scheme="https">
+            <path event="deeplink_cb" url="*" />
+        </host>
+    </universal-links>
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine" />
