@@ -1,48 +1,51 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.test.Ondemand"
     },
-    "config_munge": {
-        "files": {}
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.test.Ondemand"
     },
-    "installed_plugins": {
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "cordova-plugin-crosswalk-webview": {
-            "XWALK_VERSION": "23+",
-            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
-            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
-            "XWALK_MODE": "embedded",
-            "XWALK_MULTIPLEAPK": "true",
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "cordova-plugin-android-permissions": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "cordova-plugin-media-capture": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        }
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.test.Ondemand"
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "es6-promise-plugin": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "phonegap-plugin-media-stream": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        }
+    "cordova-plugin-crosswalk-webview": {
+      "XWALK_VERSION": "23+",
+      "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+      "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+      "XWALK_MODE": "embedded",
+      "XWALK_MULTIPLEAPK": "true",
+      "PACKAGE_NAME": "com.test.Ondemand"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.test.Ondemand"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.test.Ondemand"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.test.Ondemand"
+    },
+    "cordova-plugin-keyboard": {
+      "PACKAGE_NAME": "com.test.Ondemand"
     }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.test.Ondemand"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.test.Ondemand"
+    },
+    "phonegap-plugin-media-stream": {
+      "PACKAGE_NAME": "com.test.Ondemand"
+    }
+  }
 }

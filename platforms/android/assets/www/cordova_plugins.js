@@ -287,6 +287,14 @@ module.exports = [
         "file": "plugins/cordova-plugin-media-capture/www/android/init.js",
         "pluginId": "cordova-plugin-media-capture",
         "runs": true
+    },
+    {
+        "id": "cordova-plugin-keyboard.keyboard",
+        "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+        "pluginId": "cordova-plugin-keyboard",
+        "clobbers": [
+            "window.Keyboard"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -301,7 +309,8 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.3.3",
     "es6-promise-plugin": "4.1.0",
     "phonegap-plugin-media-stream": "1.2.0",
-    "cordova-plugin-media-capture": "1.4.3"
+    "cordova-plugin-media-capture": "1.4.3",
+    "cordova-plugin-keyboard": "1.2.0"
 };
 // BOTTOM OF METADATA
 });
