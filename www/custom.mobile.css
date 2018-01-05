@@ -18,7 +18,7 @@
     z-index: 90000;
     color: rgb(232, 232, 232);
     display: block;
-    left: 15px;
+    left: 24px;
     font-size: 24px;
 }
 
@@ -477,7 +477,8 @@ md-card.main-education-section .col-xs-12{
 
 .modal-content.email-model {
 	width: 100% !important;
-    margin-left: 0;
+	margin-left: 0;
+	margin-top: 24px;
 }
 
 .menu-list{
@@ -506,6 +507,54 @@ md-card.main-education-section .col-xs-12{
 	margin-left: -10px;
 	width: 210px;
 	/* height: 1px; */
+}
+
+section.app-content.mobile-login-view{
+    max-height: 555px;
+    overflow: hidden;
+    min-height: 479px !important;
+    height: 555px;
+}
+.loginnew .landing-page .header-spacer--standard {
+    margin-bottom: 0px;
+}
+
+#myModal .modal-content{
+	width: 100% !important;
+    overflow: scroll;
+}
+
+#certificateModal{
+	width: 100% !important;
+}
+/* #myModal .modal-content,
+.modal-cert-form-wrapper,
+#myModal #certificateModal{
+	width:100% !important;
+} */
+
+.modal-cert-form-wrapper{
+    overflow: scroll;
+}
+
+.introduction-container .overlay .closebtn {
+    position: fixed;
+    top: -17px;
+    right: 0;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 99999999 !important;
+	text-align: right;
+}
+
+@media screen and (max-device-width: 767px) and (min-device-width: 310px) and (orientation: portrait){
+.loginnew .signup-toggle:hover,
+.loginnew .signup-toggle:focus,
+.loginnew .signup-toggle {
+    float: right;
+    text-align: right;
+}
 }
 
 @media only screen and (max-width: 500px)
