@@ -1,6 +1,22 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/www/YoutubeVideoPlayer.js",
+        "id": "com.bunkerpalace.cordova.YoutubeVideoPlayer.YoutubeVideoPlayer",
+        "pluginId": "com.bunkerpalace.cordova.YoutubeVideoPlayer",
+        "clobbers": [
+            "YoutubeVideoPlayer"
+        ]
+    },
+    {
+        "file": "plugins/com.moust.cordova.videoplayer/www/videoplayer.js",
+        "id": "com.moust.cordova.videoplayer.VideoPlayer",
+        "pluginId": "com.moust.cordova.videoplayer",
+        "clobbers": [
+            "VideoPlayer"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-android-permissions/www/permissions-dummy.js",
         "id": "cordova-plugin-android-permissions.Permissions",
         "pluginId": "cordova-plugin-android-permissions",
@@ -188,47 +204,12 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "id": "cordova-plugin-splashscreen.SplashScreen",
-        "pluginId": "cordova-plugin-splashscreen",
+        "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+        "id": "cordova-plugin-keyboard.keyboard",
+        "pluginId": "cordova-plugin-keyboard",
         "clobbers": [
-            "navigator.splashscreen"
+            "window.Keyboard"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
-        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
-        "pluginId": "cordova-plugin-splashscreen",
-        "runs": true
-    },
-    {
-        "file": "plugins/cordova-plugin-network-information/www/network.js",
-        "id": "cordova-plugin-network-information.network",
-        "pluginId": "cordova-plugin-network-information",
-        "clobbers": [
-            "navigator.connection",
-            "navigator.network.connection"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-network-information/www/Connection.js",
-        "id": "cordova-plugin-network-information.Connection",
-        "pluginId": "cordova-plugin-network-information",
-        "clobbers": [
-            "Connection"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-network-information/src/browser/network.js",
-        "id": "cordova-plugin-network-information.NetworkInfoProxy",
-        "pluginId": "cordova-plugin-network-information",
-        "runs": true
-    },
-    {
-        "file": "plugins/es6-promise-plugin/www/promise.js",
-        "id": "es6-promise-plugin.Promise",
-        "pluginId": "es6-promise-plugin",
-        "runs": true
     },
     {
         "file": "plugins/cordova-plugin-media-capture/www/CaptureAudioOptions.js",
@@ -299,28 +280,41 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/www/YoutubeVideoPlayer.js",
-        "id": "com.bunkerpalace.cordova.YoutubeVideoPlayer.YoutubeVideoPlayer",
-        "pluginId": "com.bunkerpalace.cordova.YoutubeVideoPlayer",
+        "file": "plugins/cordova-plugin-network-information/www/network.js",
+        "id": "cordova-plugin-network-information.network",
+        "pluginId": "cordova-plugin-network-information",
         "clobbers": [
-            "YoutubeVideoPlayer"
+            "navigator.connection",
+            "navigator.network.connection"
         ]
     },
     {
-        "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
-        "id": "cordova-plugin-keyboard.keyboard",
-        "pluginId": "cordova-plugin-keyboard",
+        "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+        "id": "cordova-plugin-network-information.Connection",
+        "pluginId": "cordova-plugin-network-information",
         "clobbers": [
-            "window.Keyboard"
+            "Connection"
         ]
     },
     {
-        "file": "plugins/com.moust.cordova.videoplayer/www/videoplayer.js",
-        "id": "com.moust.cordova.videoplayer.VideoPlayer",
-        "pluginId": "com.moust.cordova.videoplayer",
+        "file": "plugins/cordova-plugin-network-information/src/browser/network.js",
+        "id": "cordova-plugin-network-information.NetworkInfoProxy",
+        "pluginId": "cordova-plugin-network-information",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "pluginId": "cordova-plugin-splashscreen",
         "clobbers": [
-            "VideoPlayer"
+            "navigator.splashscreen"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
+        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+        "pluginId": "cordova-plugin-splashscreen",
+        "runs": true
     },
     {
         "file": "plugins/cordova-universal-links-plugin/www/universal_links.js",
@@ -329,26 +323,104 @@ module.exports = [
         "clobbers": [
             "universalLinks"
         ]
+    },
+    {
+        "file": "plugins/es6-promise-plugin/www/promise.js",
+        "id": "es6-promise-plugin.Promise",
+        "pluginId": "es6-promise-plugin",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+        "id": "cordova-plugin-camera.Camera",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "Camera"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+        "id": "cordova-plugin-camera.CameraPopoverOptions",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "CameraPopoverOptions"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/Camera.js",
+        "id": "cordova-plugin-camera.camera",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "navigator.camera"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/src/browser/CameraProxy.js",
+        "id": "cordova-plugin-camera.CameraProxy",
+        "pluginId": "cordova-plugin-camera",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-actionsheet/www/ActionSheet.js",
+        "id": "cordova-plugin-actionsheet.ActionSheet",
+        "pluginId": "cordova-plugin-actionsheet",
+        "clobbers": [
+            "window.plugins.actionsheet"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-actionsheet/src/browser/ActionSheetProxy.js",
+        "id": "cordova-plugin-actionsheet.ActionSheetProxy",
+        "pluginId": "cordova-plugin-actionsheet",
+        "merges": [
+            ""
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
+        "id": "cordova-plugin-file-transfer.FileTransferError",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransferError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
+        "id": "cordova-plugin-file-transfer.FileTransfer",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/browser/FileTransfer.js",
+        "id": "cordova-plugin-file-transfer.BrowserFileTransfer",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
+    "com.bunkerpalace.cordova.YoutubeVideoPlayer": "1.0.5",
+    "com.moust.cordova.videoplayer": "1.0.1",
     "cordova-plugin-android-permissions": "1.0.0",
-    "cordova-plugin-compat": "1.0.0",
     "cordova-plugin-crosswalk-webview": "2.3.0",
+    "cordova-plugin-customurlscheme": "4.3.0",
     "cordova-plugin-file": "4.3.3",
+    "cordova-plugin-keyboard": "1.2.0",
+    "cordova-plugin-media-capture": "1.4.3",
+    "cordova-plugin-network-information": "1.3.3",
     "cordova-plugin-splashscreen": "4.0.3",
     "cordova-plugin-whitelist": "1.3.2",
-    "cordova-plugin-network-information": "1.3.3",
+    "cordova-universal-links-plugin": "1.2.1",
     "es6-promise-plugin": "4.1.0",
-    "phonegap-plugin-media-stream": "1.2.0",
-    "cordova-plugin-media-capture": "1.4.3",
-    "com.bunkerpalace.cordova.YoutubeVideoPlayer": "1.0.5",
-    "cordova-plugin-keyboard": "1.2.0",
-    "cordova-plugin-customurlscheme": "4.3.0",
-    "com.moust.cordova.videoplayer": "1.0.1",
-    "cordova-universal-links-plugin": "1.2.1"
+    "cordova-plugin-camera": "2.4.1",
+    "cordova-plugin-actionsheet": "2.3.3",
+    "cordova-plugin-compat": "1.1.0",
+    "cordova-plugin-file-transfer": "1.7.0"
 }
 // BOTTOM OF METADATA
 });

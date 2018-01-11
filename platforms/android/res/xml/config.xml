@@ -35,6 +35,15 @@
         <param name="android-package" value="com.nordnetab.cordova.ul.UniversalLinksPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="ActionSheet">
+        <param name="android-package" value="nl.xservices.plugins.actionsheet.ActionSheet" />
+    </feature>
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
     <widget>
         <feature name="YoutubeVideoPlayer">
             <param name="android-package" value="com.bunkerpalace.cordova.YoutubeVideoPlayer" />

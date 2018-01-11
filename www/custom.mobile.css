@@ -15,13 +15,46 @@
 #open-icon {
 	position: fixed;
     margin-top: 17px;
-    z-index: 90000;
+    /* z-index: 90000; */
     color: rgb(232, 232, 232);
     display: block;
     left: 24px;
     font-size: 24px;
 }
+.candidate-title md-whiteframe{
+		width: 100%;
+}
+md-whiteframe span{
+	overflow-wrap: break-word;
+}
 
+.calender .cal-month-box .cal-day-today span[data-cal-date] {
+    
+    margin-right: 4px;
+}
+
+.calender .cal-month-day .cal-events-num {
+    margin-left: 6px;
+    
+}
+
+.education-section p{
+	overflow-wrap: break-word;
+}
+#cal-week-box{
+	display: none;
+}
+
+.calender-candidate .panel-body{
+	padding:0px;
+}
+
+.calender .cal-day-tick {
+   right: 62%;
+}
+.modal-header .close{
+	width:5%;
+}
 .sub-menu.admin-menu{
  	width: 100%
 }
@@ -258,10 +291,14 @@ footer{
 }
 
 .canidates-container .candidate-view .candidate-view-steps .step-body > div.col-md-12 {
-    float: left;
+    /* float: left; */
     height: 100%;
     background: #fff;
 	padding-top: 1em;
+}
+
+.canidates-container .candidate-view .candidate-view-steps .step-body > div.col-md-12> div.col-md-6 {
+	padding: 0px;
 }
 
 .full-height .canidates-container{
@@ -271,6 +308,14 @@ footer{
 .content-wrapper.candidate-view .candidate-view-steps .step-body .whte-bg div > .btn-sec{
 	margin-top: 50%;
 } */
+.audio-response-question .audio-response-container {
+    border-left: 0px;
+}
+
+
+.md-card-interviewReq .table-responsive{
+	border:0px;
+}
 
 .content-wrapper.candidate-view.welcome-interview .candidate-view-steps .step-body .btn-left2{
 	margin-top:10%;
@@ -306,7 +351,8 @@ footer{
 }
 
 .video-response-question .pull-right,
-.video-response-question .pull-right > button{
+.video-response-question .pull-right > button,
+.mobile-video .pull-right > button{
     width: 97%;
 }
 .video-response-question .question-text.video-container,
@@ -548,6 +594,70 @@ section.app-content.mobile-login-view{
 	text-align: right;
 }
 
+.ondemand-div .question-container {
+	padding: 0px !important;
+}
+.mobile-video.responsebtn .pull-right,
+.mobile-video.responsebtn .pull-right button{
+	width:100%;
+}
+.ondemand-div .question-container .btn{
+	width: 100%;
+}
+
+.exit-video-show{
+	float:none;
+	padding: 0;
+}
+
+.exit-video-show .upper-form-wrapper .col-md-6,
+.exit-video-show .upper-form-wrapper .col-md-6 .panel-default .panel-body{
+	padding: 0;
+}
+.content-wrapper.candidate-view .btn-record {
+	max-width: 100%;
+}
+.conference-content-page #videoSection .video-container {
+	width: auto;
+}
+.conference-content-page .top-right-links{
+	display:none;
+}
+.conference-content-page #videoSection .video-container video {
+    margin: 0 auto;
+    width: 85%;
+    margin-left: 10%;
+    margin-top: 17px;
+}
+.position-container .position-search {
+    margin-top: -52px;
+    margin-left: 0;
+    float: right;
+}
+.position-card>.col-md-12{
+	padding-right: 0;
+}
+.add-position-page .multiapply-board md-whiteframe {
+	min-width: auto;
+}
+.candidate-review .candidate-profile-view .search-filter .section md-input-container .btn-information{
+    width: 100%;
+    margin-left: -14px;
+}
+
+.confprepheading.col-xs-offset-3 {
+	margin-left: 0;
+	width: 103%;
+}
+/* .conference-content-page #videoSection video:nth-child(2){
+	display: none;
+} */
+
+.conference-content-page .camera-show-container{
+	display: none;
+}
+
+
 @media screen and (max-device-width: 767px) and (min-device-width: 310px) and (orientation: portrait){
 .loginnew .signup-toggle:hover,
 .loginnew .signup-toggle:focus,
@@ -675,6 +785,10 @@ section.app-content.mobile-login-view{
 	.content-wrapper {
 		padding: 15px 40px 85px !important;
 	}
+	.position-container .content-wrappe,
+	.content-wrapper.applied-joblist-containerr {
+		padding: 15px 15px 85px 15px !important;
+	}
 	.edit-my-profile-page.content-wrapper {
 		padding: 15px 10px 85px !important;
 	}
@@ -716,7 +830,7 @@ section.app-content.mobile-login-view{
 
 .audio-response-question .question-text audio::-webkit-media-controls-panel{
 	padding: 0;
-	margin-top: -86px;
+	/* margin-top: -86px; */
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 568px) and (min-device-width: 320px){

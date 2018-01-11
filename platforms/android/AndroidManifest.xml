@@ -32,6 +32,9 @@
     <activity android:label="@string/app_name" android:name="android.permission.VideoCapture"/>
     <activity android:name="com.keyes.youtube.OpenYouTubePlayerActivity" android:screenOrientation="landscape"/>
     <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/activity_name" android:launchMode="singleTop" android:name="com.bunkerpalace.cordova.YouTubeActivity" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+    <provider android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+    </provider>
   </application>
   <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25"/>
   <uses-feature android:name="android.hardware.camera"/>

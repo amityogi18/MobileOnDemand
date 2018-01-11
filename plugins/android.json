@@ -51,12 +51,21 @@
         },
         "cordova-universal-links-plugin": {
             "PACKAGE_NAME": "com.test.Ondemand"
-        }
-    },
-    "dependent_plugins": {
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-actionsheet": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.test.Ondemand"
         },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        }
+    },
+    "dependent_plugins": {
         "es6-promise-plugin": {
             "PACKAGE_NAME": "com.test.Ondemand"
         },

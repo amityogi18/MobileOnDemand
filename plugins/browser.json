@@ -7,13 +7,32 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "com.moust.cordova.videoplayer": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
         "cordova-plugin-android-permissions": {
             "PACKAGE_NAME": "com.test.Ondemand"
         },
         "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "com.test.Ondemand"
         },
+        "cordova-plugin-customurlscheme": {
+            "URL_SCHEME": "ondemand",
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
         "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-keyboard": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.test.Ondemand"
         },
         "cordova-plugin-splashscreen": {
@@ -22,37 +41,24 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.test.Ondemand"
         },
-        "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "cordova-plugin-media-capture": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "com.bunkerpalace.cordova.YoutubeVideoPlayer": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "cordova-plugin-keyboard": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "cordova-plugin-customurlscheme": {
-            "URL_SCHEME": "ondemand",
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "com.moust.cordova.videoplayer": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
         "cordova-universal-links-plugin": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-actionsheet": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.test.Ondemand"
+        },
+        "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.test.Ondemand"
         }
     },
     "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
         "es6-promise-plugin": {
-            "PACKAGE_NAME": "com.test.Ondemand"
-        },
-        "phonegap-plugin-media-stream": {
             "PACKAGE_NAME": "com.test.Ondemand"
         }
     }
