@@ -297,6 +297,15 @@ footer{
 	padding-top: 1em;
 }
 
+.question-message {
+   width: 100%;
+}
+
+.content-wrapperm.singuphome .registration-login-form{
+	margin-left:0px;
+	margin-top:0px;
+}
+
 .canidates-container .candidate-view .candidate-view-steps .step-body > div.col-md-12> div.col-md-6 {
 	padding: 0px;
 }
